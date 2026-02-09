@@ -1,2 +1,4 @@
-# Roblox-Username-Checker
-Simple Python script to check list of Usernames via the public Roblox API.
+# Roblox Related scripts
+I will be adding simple roblox scripts in here 
+   - Roblox Stuio related scripts (Lua)
+   - Roblox API related scripts (Python, JS)
