@@ -25,7 +25,7 @@ def check_usernames(usernames):
         return response.json().get("data", [])
     except Exception as e:
         print(f"Error with API request: {e}")
-        return [{"requestedUsername": name, "isAvailable": False, "reason": "API-Fehler"} for name in usernames]
+        return [{"requestedUsername": name, "isAvailable": False, "reason": "API-Error"} for name in usernames]
 
 def main():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
@@ -44,7 +44,7 @@ def main():
             reason = result.get("reason", "")
 
             if available:
-                print(f"✔ FREI: {name}")
+                print(f"✔ Available: {name}")
                 free_names.append(name)
                 with open(OUTPUT_FILE, "a", encoding="utf-8") as out:
                     out.write(name + "\n")
