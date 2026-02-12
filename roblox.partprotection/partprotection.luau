@@ -17,7 +17,7 @@ local function registerBench(bench)
 
 	if bench:IsA("Model") then
 		for _, obj in ipairs(bench:GetDescendants()) do
-			if obj:IsA("BasePart") then
+			if git push origin mainobj:IsA("BasePart") then
 				table.insert(parts, {
 					part = obj,
 					originalCFrame = obj.CFrame
