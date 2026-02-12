@@ -1,3 +1,6 @@
+# roblox mass username checker
+# @02zoit | 12.02.2026
+
 import requests
 import time
 
