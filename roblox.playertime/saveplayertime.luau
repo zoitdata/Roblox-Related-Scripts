@@ -1,4 +1,5 @@
--- ServerScriptService
+-- Save Playertime + Store Data
+-- @02zoit | 12.02.2026
 
 local DataStoreService = game:GetService("DataStoreService")
 local timeStore = DataStoreService:GetDataStore("PlayerPlayTime")
